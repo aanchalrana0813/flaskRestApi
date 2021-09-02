@@ -4,7 +4,7 @@ def sum(a, b):
 def avg(a,b):
   return (a+b)/2
 
-def armstong(n):
+def armstrong(n):
   n = int(input("Enter the number|n"))
   sum = 0
   order = len(str(n))

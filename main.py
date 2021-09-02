@@ -19,10 +19,18 @@ def armstrong(n):
 
   if(sum == copy_n):
     print(f"{copy_n} is a Armstrong Number")
-    return "True"
+    result = {
+      "Number": copy_n,
+      "Armstrong": True
+    }
   else:
     print(f"{copy_n} is not a Armstrong Number")
-    return "False"
+    result = {
+      "Number": copy_n,
+      "Armstrong": False
+    }
+    
+  return jsonify(result)
 
 if __name__ == "__main__":
   app.run(debug=True)
