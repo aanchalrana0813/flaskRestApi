@@ -21,13 +21,17 @@ def armstrong(n):
     print(f"{copy_n} is a Armstrong Number")
     result = {
       "Number": copy_n,
-      "Armstrong": True
+      "Armstrong": True,
+       "Server ID": "122.234.456.53" ,
+      "Other Numbers": [1, 21, 36, 86]
     }
   else:
     print(f"{copy_n} is not a Armstrong Number")
     result = {
       "Number": copy_n,
-      "Armstrong": False
+      "Armstrong": False,
+      "Server ID": "122.234.456.53" ,
+      "Other Numbers": [1, 21, 36, 86]
     }
     
   return jsonify(result)
